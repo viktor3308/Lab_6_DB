@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.eltech.db.ServerFormController">
+   <bottom>
+      <Label fx:id="lblStatus" text="Label" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <TabPane prefHeight="235.0" prefWidth="311.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+         <tabs>
+            <Tab text="conditioners">
+               <content>
+                  <StackPane>
+                     <children>
+                        <TableView fx:id="tvConditioners" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+               </content>
+            </Tab>
+            <Tab text="rooms">
+               <content>
+                  <StackPane>
+                     <children>
+                        <TableView fx:id="tvRooms" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+               </content>
+            </Tab>
+            <Tab text="alarms">
+               <content>
+                  <StackPane>
+                     <children>
+                        <TableView fx:id="tvAlarms" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
